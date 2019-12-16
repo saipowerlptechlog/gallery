@@ -1,0 +1,5 @@
+
+<h1>gallery</h1>
+<div *ngFor="let image of albums; let i=index">
+  <img [src]="image.thumb"  (click)="open(i)" />
+</div>
